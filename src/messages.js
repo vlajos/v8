@@ -424,7 +424,7 @@ function ScriptLocationFromPosition(position,
  * start position of the source for the function within the full script source.
  * @param {number} opt_line The line within the source. Default value is 0
  * @param {number} opt_column The column in within the line. Default value is 0
- * @param {number} opt_offset_position The offset from the begining of the
+ * @param {number} opt_offset_position The offset from the beginning of the
  *     source from where the line and column calculation starts.
  *     Default value is 0
  * @return {SourceLocation}

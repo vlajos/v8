@@ -221,7 +221,7 @@ Debug.LiveEdit = new function() {
     change_log.push( {position_patched: position_patch_report} );
 
     for (var i = 0; i < update_positions_list.length; i++) {
-      // TODO(LiveEdit): take into account wether it's source_changed or
+      // TODO(LiveEdit): take into account whether it's source_changed or
       // unchanged and whether positions changed at all.
       PatchPositions(update_positions_list[i], diff_array,
           position_patch_report);

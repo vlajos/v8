@@ -2384,7 +2384,7 @@
         Made multi-line comments not count when deciding whether the '-->'
         comment starter is first on a line. This matches Safari.
 
-        Made handling of non-array recievers in Array length setter correct
+        Made handling of non-array receivers in Array length setter correct
         (issue 1491).
 
         Added ability to heap profiler to iterate over snapshot's node
@@ -2962,7 +2962,7 @@
         Exposed heap size limit to the heap statistics gathered by
         the GetHeapStatistics API.
 
-        Wrapped external pointers more carefully (issue 1037).
+        Wrapped external pointers more carefuly (issue 1037).
 
         Hardened the implementation of error objects to avoid setters
         intercepting the properties set then throwing an error.

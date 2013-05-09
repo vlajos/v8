@@ -389,7 +389,7 @@ Address MemoryAllocator::AllocateAlignedMemory(size_t reserve_size,
 
   if (base == NULL) {
     // Failed to commit the body. Release the mapping and any partially
-    // commited regions inside it.
+    // committed regions inside it.
     reservation.Release();
     return NULL;
   }

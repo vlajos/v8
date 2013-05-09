@@ -522,7 +522,7 @@ class Serializer : public SerializerDeserializer {
     void VisitCodeEntry(Address entry_address);
     void VisitGlobalPropertyCell(RelocInfo* rinfo);
     void VisitRuntimeEntry(RelocInfo* reloc);
-    // Used for seralizing the external strings that hold the natives source.
+    // Used for serializing the external strings that hold the natives source.
     void VisitExternalAsciiString(
         v8::String::ExternalAsciiStringResource** resource);
     // We can't serialize a heap with external two byte strings.

@@ -36,7 +36,7 @@ namespace internal {
 
 
 // The number of generations for each sub cache.
-// The number of ScriptGenerations is carefully chosen based on histograms.
+// The number of ScriptGenerations is carefuly chosen based on histograms.
 // See issue 458: http://code.google.com/p/v8/issues/detail?id=458
 static const int kScriptGenerations = 5;
 static const int kEvalGlobalGenerations = 2;

@@ -8557,7 +8557,7 @@ Handle<String> SeqString::Truncate(Handle<SeqString> string, int new_length) {
 AllocationSiteInfo* AllocationSiteInfo::FindForJSObject(JSObject* object) {
   // Currently, AllocationSiteInfo objects are only allocated immediately
   // after JSArrays in NewSpace, and detecting whether a JSArray has one
-  // involves carefully checking the object immediately after the JSArray
+  // involves carefuly checking the object immediately after the JSArray
   // (if there is one) to see if it's an AllocationSiteInfo.
   if (FLAG_track_allocation_sites && object->GetHeap()->InNewSpace(object)) {
     Address ptr_end = (reinterpret_cast<Address>(object) - kHeapObjectTag) +

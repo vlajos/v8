@@ -4258,7 +4258,7 @@ TEST(NoBreakWhenBootstrapping) {
     v8::HandleScope handle_scope(isolate);
     v8::Context::New(isolate, &extensions);
   }
-  // Check that no DebugBreak events occured during the context creation.
+  // Check that no DebugBreak events occurred during the context creation.
   CHECK_EQ(0, break_point_hit_count);
 
   // Get rid of the debug event listener.
@@ -4775,7 +4775,7 @@ bool IsExceptionEventMessage(char *message) {
 }
 
 
-// We match the message wether it is an evaluate response message.
+// We match the message whether it is an evaluate response message.
 bool IsEvaluateResponseMessage(char* message) {
   const char* type_response = "\"type\":\"response\"";
   const char* command_evaluate = "\"command\":\"evaluate\"";
@@ -6413,7 +6413,7 @@ TEST(RegExpDebugBreak) {
                                         frame_function_name_source,
                                         "frame_function_name");
 
-  // Test RegExp which matches white spaces and comments at the begining of a
+  // Test RegExp which matches white spaces and comments at the beginning of a
   // source line.
   const char* script =
     "var sourceLineBeginningSkip = /^(?:[ \\v\\h]*(?:\\/\\*.*?\\*\\/)*)*/;\n"
@@ -7097,7 +7097,7 @@ static void DebugEventContextChecker(const v8::Debug::EventDetails& details) {
   CHECK_EQ(expected_callback_data, details.GetCallbackData());
 }
 
-// Check that event details contain context where debug event occured.
+// Check that event details contain context where debug event occurred.
 TEST(DebugEventContext) {
   v8::Isolate* isolate = v8::Isolate::GetCurrent();
   v8::HandleScope scope(isolate);
@@ -7127,7 +7127,7 @@ static void DebugEventBreakDataChecker(const v8::Debug::EventDetails& details) {
 }
 
 
-// Check that event details contain context where debug event occured.
+// Check that event details contain context where debug event occurred.
 TEST(DebugEventBreakData) {
   DebugLocalContext env;
   v8::HandleScope scope(env->GetIsolate());

@@ -298,7 +298,7 @@ class V8EXPORT HeapGraphNode {
     kRegExp = 6,      // RegExp.
     kHeapNumber = 7,  // Number stored in the heap.
     kNative = 8,      // Native object (not from V8 heap).
-    kSynthetic = 9    // Synthetic object, usualy used for grouping
+    kSynthetic = 9    // Synthetic object, usually used for grouping
                       // snapshot items together.
   };
 

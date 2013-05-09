@@ -2302,7 +2302,7 @@ int FrameDescription::ComputeParametersCount() {
     case StackFrame::JAVA_SCRIPT:
       return function_->shared()->formal_parameter_count();
     case StackFrame::ARGUMENTS_ADAPTOR: {
-      // Last slot contains number of incomming arguments as a smi.
+      // Last slot contains number of incoming arguments as a smi.
       // Can't use GetExpression(0) because it would cause infinite recursion.
       return reinterpret_cast<Smi*>(*GetFrameSlotPointer(0))->value();
     }

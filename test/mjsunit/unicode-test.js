@@ -5364,7 +5364,7 @@ var source =
 "    and consolidated sets of chunks, which is what these bins hold, so\n" +
 "    they can be found quickly.  All procedures maintain the invariant\n" +
 "    that no consolidated chunk physically borders another one, so each\n" +
-"    chunk in a list is known to be preceeded and followed by either\n" +
+"    chunk in a list is known to be preceded and followed by either\n" +
 "    inuse chunks or the ends of memory.\n" +
 "\n" +
 "    Chunks in bins are kept in size order, with ties going to the\n" +

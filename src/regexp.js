@@ -241,7 +241,7 @@ function RegExpTest(string) {
     return true;
   } else {
     // Non-global regexp.
-    // Remove irrelevant preceeding '.*' in a non-global test regexp.
+    // Remove irrelevant preceding '.*' in a non-global test regexp.
     // The expression checks whether this.source starts with '.*' and
     // that the third char is not a '?'.
     var regexp = this;

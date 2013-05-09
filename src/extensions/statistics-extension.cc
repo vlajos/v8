@@ -108,37 +108,37 @@ v8::Handle<v8::Value> StatisticsExtension::GetCounters(
   AddNumber(result, heap->new_space()->Available(),
             "new_space_available_bytes");
   AddNumber(result, heap->new_space()->CommittedMemory(),
-            "new_space_commited_bytes");
+            "new_space_committed_bytes");
   AddNumber(result, heap->old_pointer_space()->Size(),
             "old_pointer_space_live_bytes");
   AddNumber(result, heap->old_pointer_space()->Available(),
             "old_pointer_space_available_bytes");
   AddNumber(result, heap->old_pointer_space()->CommittedMemory(),
-            "old_pointer_space_commited_bytes");
+            "old_pointer_space_committed_bytes");
   AddNumber(result, heap->old_data_space()->Size(),
             "old_data_space_live_bytes");
   AddNumber(result, heap->old_data_space()->Available(),
             "old_data_space_available_bytes");
   AddNumber(result, heap->old_data_space()->CommittedMemory(),
-            "old_data_space_commited_bytes");
+            "old_data_space_committed_bytes");
   AddNumber(result, heap->code_space()->Size(),
             "code_space_live_bytes");
   AddNumber(result, heap->code_space()->Available(),
             "code_space_available_bytes");
   AddNumber(result, heap->code_space()->CommittedMemory(),
-            "code_space_commited_bytes");
+            "code_space_committed_bytes");
   AddNumber(result, heap->cell_space()->Size(),
             "cell_space_live_bytes");
   AddNumber(result, heap->cell_space()->Available(),
             "cell_space_available_bytes");
   AddNumber(result, heap->cell_space()->CommittedMemory(),
-            "cell_space_commited_bytes");
+            "cell_space_committed_bytes");
   AddNumber(result, heap->lo_space()->Size(),
             "lo_space_live_bytes");
   AddNumber(result, heap->lo_space()->Available(),
             "lo_space_available_bytes");
   AddNumber(result, heap->lo_space()->CommittedMemory(),
-            "lo_space_commited_bytes");
+            "lo_space_committed_bytes");
   AddNumber(result, heap->amount_of_external_allocated_memory(),
             "amount_of_external_allocated_memory");
   return result;

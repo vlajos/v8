@@ -831,7 +831,7 @@ BUILTIN(ArraySlice) {
   ASSERT(len >= 0);
   int n_arguments = args.length() - 1;
 
-  // Note carefully choosen defaults---if argument is missing,
+  // Note carefuly choosen defaults---if argument is missing,
   // it's undefined which gets converted to 0 for relative_start
   // and to len for relative_end.
   int relative_start = 0;
